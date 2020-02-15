@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "HttpCtrl.h"
+#include "http_ctrl.h"
 
 using namespace web;
 using namespace http;

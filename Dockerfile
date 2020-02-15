@@ -13,6 +13,7 @@ WORKDIR /home/me
 
 ENV USER=me
 ENV PATH="/home/me/.local/bin:${PATH}"
+ENV LOGDIR="/home/me/logs/"
 
-COPY cppsvc /home/me/.local/cppsvc
+COPY ./bin/cppsvc /home/me/.local/cppsvc
 CMD ["/home/me/.local/cppsvc"]

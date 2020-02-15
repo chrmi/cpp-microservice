@@ -32,6 +32,6 @@
 *.app
 
 # Etc
-cppsvc
+bin
 logs
-
+debug
