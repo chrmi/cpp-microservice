@@ -6,8 +6,8 @@ OPTIONS="--network bridge --cap-add=SYS_PTRACE --security-opt seccomp=unconfined
 
 PORTS="-p:8999:8999"
 
-CONTAINERIMAGE="cppsvc"
-CONTAINERTAG="prod"
+CONTAINERIMAGE="cpp-microservice"
+CONTAINERTAG="1.0.0"
 
 case "$1" in
     -b|--build)

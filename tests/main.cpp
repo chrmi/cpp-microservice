@@ -1,14 +1,6 @@
-#include "test_harness.h"
-#include <iostream>
-#include <cstdlib>
+#include <gtest/gtest.h>
 
-int main()
-{
-	// random number generator used in some tests
-	srand(::time_t(NULL));
-
-    TestResult tr;
-    TestRegistry::runAllTests(tr);
-
-    return 0;
+int main(int argc, char **argv) {
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }
